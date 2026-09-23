@@ -12,39 +12,19 @@
   <header class="topbar">
     <div class="brand">
       <div class="brandmark">P</div>
-      <div>
-        <div class="brandname">PROP's Mass/Weight and Energy/Power Sizing</div>
-        <div class="brandsub">UAS PROPULSION HANDOFF TOOL</div>
-      </div>
+      <div class="brandname">PROP's Mass/Weight and Energy/Power Sizing</div>
     </div>
     <div class="top-actions">
-      <div id="dbBadge" class="badge"><span class="dot"></span> Loading Thin Electric model</div>
+      <div id="dbBadge" class="badge ready"><span class="dot"></span> Thin Electric APC</div>
       <button id="resetBtn" class="ghost">Reset</button>
     </div>
   </header>
 
-  <div class="assumption-strip" aria-label="Project assumptions">
-    <span>4 rotors</span>
-    <span id="planformPill">50.0 × 50.0 cm planform</span>
-    <span>5.65 kg gross-mass cap</span>
-    <span>Boulder · 1655 m MSL</span>
-    <span>2 m AGL</span>
-    <span>≤ 0.5 m/s</span>
-    <span>15 min</span>
-    <span>0° trim at steady 0.5 m/s (no drag)</span>
-    <span>Thin Electric APC only</span>
-    <span>RPM FoS 1.5</span>
-    <span>Drive η 0.80</span>
-  </div>
-
   <main class="workspace">
     <aside class="input-panel panel">
-      <div class="panel-heading">
-        <span class="eyebrow">HANDOFF INPUTS</span>
-        <h2>What other subteams provide</h2>
-      </div>
+      <div class="panel-heading"><h2>Inputs</h2></div>
 
-      <nav id="tabs" class="tabs" aria-label="Subsystem input tabs">
+      <nav id="tabs" class="tabs" aria-label="Input tabs">
         <button data-tab="STRUCT" class="active">STRUCT</button>
         <button data-tab="GNC">GNC</button>
         <button data-tab="PWR">PWR</button>
@@ -62,9 +42,9 @@
     <section class="visual-panel panel">
       <div class="visual-head">
         <div>
-          <span id="viewEyebrow" class="eyebrow">STRUCTURE VIEW</span>
+          <span id="viewEyebrow" class="eyebrow">STRUCT</span>
           <h1 id="viewTitle">Rotor packaging</h1>
-          <p id="viewSub">Four equal rotors inside the selected square planform.</p>
+          <p id="viewSub"></p>
         </div>
         <div class="chip">LIVE</div>
       </div>
@@ -73,18 +53,12 @@
     </section>
 
     <aside class="results-panel panel">
-      <div class="panel-heading">
-        <span class="eyebrow">PROP → TEAM HANDOFF</span>
-        <h2>Sizing outputs</h2>
-      </div>
+      <div class="panel-heading"><h2>Sizing outputs</h2></div>
       <div id="cards" class="cards"></div>
     </aside>
   </main>
 
-  <footer>
-    <span>PROP starting recommendations only: LiPo ≈ 160 Wh/kg · Li-ion ≈ 200 Wh/kg</span>
-    <span>PWR should enter the actual pack-level Wh/kg for the selected battery</span>
-  </footer>
+  <footer>PROP reference: LiPo ≈ 160 Wh/kg · Li-ion ≈ 200 Wh/kg</footer>
 </div>
 <script src="app.js"></script>
 </body>

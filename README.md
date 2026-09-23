@@ -1,6 +1,4 @@
-# PROP's Mass/Weight and Energy/Power Sizing
-
-## Fixed assumptions
+# PROP's Mass/Weight and Energy/Power Sizing Fixed assumptions
 
 - 4 rotors
 - square planform is adjustable up to 0.5 m × 0.5 m
@@ -16,3 +14,6 @@
 
 For endurance, the UAS is modeled in steady level flight at 2 m AGL and 0.5 m/s and this is appropriate because we are basically hovering the whole time anyways since searching and transiting at 0.5 m/s requires a tilt angle so small that it's basically hovering
 
+
+
+PROP reference values: LiPo ≈ 160 Wh/kg, Li-ion ≈ 200 Wh/kg.
